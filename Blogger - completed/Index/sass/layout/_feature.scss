@@ -1,0 +1,28 @@
+.feature{
+    padding:10rem;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap:11rem;
+    
+    @media only screen and (max-width:56.25em){
+        padding:10rem 4rem;
+    }
+}
+
+.feature-card{
+    width:100%;
+    text-align:center;
+    box-shadow:0 1rem 3rem #999;
+    
+    &__img{
+        width:100%;
+        object-fit:cover;
+        margin-bottom:2rem;
+    }
+    
+    &__time-update{
+        display:block;
+        font-size:1.6rem;
+        font-family:$font-abel;
+    }
+}

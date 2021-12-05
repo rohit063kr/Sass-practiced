@@ -1,0 +1,289 @@
+.mb-li {
+  margin-bottom: 1rem !important; }
+
+.mb-sm {
+  margin-bottom: 2.5rem !important; }
+
+.mb-md {
+  margin-bottom: 4.5rem !important; }
+
+.mb-lg {
+  margin-bottom: 6.5rem !important; }
+
+.mb-hg {
+  margin-bottom: 10.5rem !important; }
+
+.navigation {
+  display: grid;
+  grid-template-columns: min-content 1fr max-content; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  font-family: "Open Sans";
+  position: relative; }
+
+.container {
+  width: 114rem;
+  margin: 0 auto; }
+
+.heading-1 {
+  font-size: 5rem;
+  font-weight: 300; }
+
+.heading-3 {
+  font-size: 2.3rem; }
+
+.heading-4 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #495057; }
+
+.heading-6 {
+  font-size: 1.7rem;
+  font-weight: 300; }
+
+.color-primary {
+  color: #ee5057 !important;
+  font-weight: 300; }
+
+.color-white {
+  color: #fff !important;
+  font-weight: 300; }
+
+.color-black {
+  color: #000 !important;
+  font-weight: 300; }
+
+.text-2 {
+  font-size: 1.3rem;
+  color: #898989;
+  line-height: 2.5rem; }
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 900;
+  font-size: 1.3rem;
+  transition: background .3s; }
+  .btn--primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #ee5057;
+    color: #fff; }
+  .btn-hov--primary-dark:hover {
+    background: #d53239; }
+  .btn--secondary {
+    color: #ee5057;
+    font-size: 1.3rem; }
+
+.button {
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  border: 2px solid #fff;
+  border-bottom: 1px solid #fff; }
+
+.tour {
+  padding: 11rem 0;
+  background: #F4F4F4; }
+  .tour__card-container {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    grid-gap: 3rem; }
+  .tour__card {
+    background: #fff; }
+    .tour__card > *:not(:first-child) {
+      padding: 0 3rem;
+      margin-top: 1rem; }
+  .tour__btn {
+    height: 5rem; }
+  .tour__img {
+    width: 100%;
+    object-fit: cover; }
+  .tour__info-card {
+    background: #fff;
+    align-self: start; }
+  .tour__title {
+    background: #ee5057;
+    padding: 1rem;
+    font-weight: 100; }
+  .tour__info-container {
+    display: grid;
+    grid-gap: 1.4rem;
+    padding: 1.4rem; }
+  .tour__info-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start;
+    background: #F4F4F4; }
+  .tour__info-img {
+    margin-right: 2rem; }
+
+.feature {
+  height: 110vh; }
+  .feature__bg {
+    background: #ee5057;
+    padding: 5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .feature__card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    padding: 11rem 0;
+    width: 84%;
+    margin: 0 auto; }
+  .feature__card {
+    text-align: center;
+    width: 100%;
+    padding: 2rem 4rem;
+    border-radius: 0;
+    trnasform: scale(1);
+    z-index: 6;
+    background: #fff;
+    transition: all .5s; }
+    .feature__card > * {
+      margin-bottom: 2rem; }
+    .feature__card:hover {
+      box-shadow: 0 3px 21px #ccc;
+      transform: scale(1.09);
+      z-index: 10; }
+  .feature__icon {
+    font-size: 7rem;
+    color: #ee5057; }
+
+.header {
+  height: 97vh;
+  background: url(../img/bg-img-1.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative; }
+  .header__container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 2.6rem 4rem; }
+  .header__form {
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    grid-template-columns: repeat(10, 8rem);
+    grid-row-gap: 1.5rem;
+    grid-column-gap: .8rem; }
+    .header__form--sm-icon {
+      font-size: 1.4rem !important; }
+    .header__form--items {
+      position: relative; }
+    .header__form--item1 {
+      grid-column: 1/4; }
+    .header__form--item2 {
+      grid-column: 4/7; }
+    .header__form--item3 {
+      grid-column: 7/-1; }
+    .header__form--item4 {
+      grid-column: 1/3; }
+    .header__form--item5 {
+      grid-column: 3/5; }
+    .header__form--item6 {
+      grid-column: 5/8; }
+    .header__form--item7 {
+      grid-column: 8/-1; }
+    .header__form--item8 {
+      grid-column: 1/-1; }
+  .header__icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    color: #ee5057; }
+  .header__input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    padding: 1.4rem 4.5rem;
+    color: #495057; }
+  .header__input::-webkit-input-placeholder {
+    color: #495057; }
+  .header__header-input--option {
+    font-size: 1.3rem; }
+  .header__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    color: #495057; }
+
+.top-sticky-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background: #fff;
+  z-index: 10;
+  box-shadow: 0 1px 18px #777; }
+
+.navigation {
+  margin: 0 1.2rem; }
+  .navigation__logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .navigation__logo-img {
+    margin-right: 1rem; }
+  .navigation__logo-txt {
+    font-size: 2.8rem;
+    font-weight: 900; }
+  .navigation__nav {
+    display: flex;
+    align-items: stretch; }
+  .navigation__nav-list {
+    display: flex;
+    align-items: stretch;
+    list-style: none; }
+  .navigation__nav-list-items {
+    display: flex;
+    align-items: stretch;
+    border-left: 1px solid #ccc; }
+  .navigation__nav-list-items:last-child {
+    border-right: 1px solid #ccc; }
+  .navigation__nav-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    padding: 5.2rem 3.5rem;
+    transition: background .4s, color .1s;
+    font-size: 1.3rem; }
+  .navigation__nav-link--active, .navigation__nav-link:hover {
+    background: #ee5057;
+    color: #fff; }
+
+.video {
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87)); }
+  .video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
